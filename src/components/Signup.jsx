@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useState } from 'react'
+import Navbar from '../Navbar'
 
 const Signup = () => {
 
@@ -34,6 +35,7 @@ const Signup = () => {
 
     return (
         <div>
+            <Navbar/>
             <div className="container">
                 <div className="row">
                     <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
@@ -64,7 +66,8 @@ const Signup = () => {
                             </div>
                             <div className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                                 <center>
-                                    <button className="btn btn-primary" onClick={readValue}>Sign Up</button>
+                                    <button className="btn btn-primary" onClick={readValue}>Sign Up</button> <br /> <br />
+                                    <a href="/">Login</a>
                                 </center>
                             </div>
                         </div>
