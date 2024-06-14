@@ -1,10 +1,11 @@
 import axios from 'axios'
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import Navbar from './Navbar'
 
 const Login = () => {
 
+    const navigate=useNavigate()
     const [data, setdata] = useState({
         "email": "",
         "pass": ""
@@ -17,6 +18,7 @@ const Login = () => {
             (response) => {
                 if (response.data.status == "success") {
                     alert("Login Success")
+                    navigate("/add")
                 }
                 else {
                     alert("Login Failed")
