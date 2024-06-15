@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React, { useState } from 'react'
-import Navbar from '../Navbar'
+import Navbar from './Navbar'
 
 const Signup = () => {
 
