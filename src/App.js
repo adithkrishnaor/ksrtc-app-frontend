@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Signup from './components/Signup';
 import Login from './components/Login';
@@ -9,7 +9,7 @@ function App() {
     <div>
       <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Login />} />
+        <Route path="/" element={<Login/>} />
         <Route path="/signup" element={<Signup />} />
       </Routes>
       </BrowserRouter>
