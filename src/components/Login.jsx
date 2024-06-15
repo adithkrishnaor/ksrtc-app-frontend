@@ -18,7 +18,7 @@ const Login = () => {
             (response) => {
                 if (response.data.status == "success") {
                     alert("Login Success")
-                    navigate("/add")
+                    navigate('/add')
                 }
                 else {
                     alert("Login Failed")
