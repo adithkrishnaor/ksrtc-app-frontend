@@ -7,8 +7,8 @@ const Signup = () => {
     const [data, setdata] = useState({
         "name": "",
         "email": "",
-        "num":"",
-        "gender":"",
+        "num": "",
+        "gender": "",
         "pass": "",
         "cpass": ""
     })
@@ -35,42 +35,56 @@ const Signup = () => {
 
     return (
         <div>
-{/*             <Navbar/> */}
             <div className="container">
                 <div className="row">
                     <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                        <div className="row g-3">
-                            <div className="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                                <label htmlFor="" className="form-label">Name</label>
-                                <input type="text" className="form-control" name='name' value={data.name} onChange={inputhandler}/>
-                            </div>
-                            <div className="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                                <label htmlFor="" className="form-label">Email</label>
-                                <input type="email" className="form-control" name='email' value={data.email} onChange={inputhandler}/>
-                            </div>
-                            <div className="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                                <label htmlFor="" className="form-label">Phone Number</label>
-                                <input type="text" className="form-control" name='num' value={data.num} onChange={inputhandler}/>
-                            </div>
-                            <div className="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                                <label htmlFor="" className="form-label">Gender</label>
-                                <input type="text" className="form-control" name='gender' value={data.gender} onChange={inputhandler}/>
-                            </div>
-                            <div className="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                                <label htmlFor="" className="form-label">Password</label>
-                                <input type="password" className="form-control" name='pass' value={data.pass} onChange={inputhandler}/>
-                            </div>
-                            <div className="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                                <label htmlFor="" className="form-label">Confirm Password</label>
-                                <input type="password" className="form-control" name='cpass' value={data.cpass} onChange={inputhandler}/>
-                            </div>
-                            <div className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <br /><br />
+                        <div class="card border-rounded text-bg-light border-primary">
+                            <div class="card-body">
                                 <center>
-                                    <button className="btn btn-primary" onClick={readValue}>Sign Up</button> <br /> <br />
-                                    <a href="/">Login</a>
+                                    <h3 class="card-title">Signup Here...</h3> <hr />
                                 </center>
-                            </div>
+                                <div className="row g-3">
+                                    <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                        {/* <label htmlFor="" className="form-label">Name</label> */}
+                                        <input type="text" className="form-control" name='name' placeholder="Name" value={data.name} onChange={inputhandler} />
+                                    </div>
+                                    <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                        {/* <label htmlFor="" className="form-label">Email</label> */}
+                                        <input type="email" className="form-control" name='email' placeholder="Email" value={data.email} onChange={inputhandler} />
+                                    </div>
+                                    <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                        {/* <label htmlFor="" className="form-label">Phone Number</label> */}
+                                        <input type="text" className="form-control" name='num' placeholder="Phone Number" value={data.num} onChange={inputhandler} />
+                                    </div>
+                                    <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                        {/* <label htmlFor="" className="form-label">Gender</label> */}
+                                        {/* <input type="text" className="form-control" name='gender' placeholder="Gender" value={data.gender} onChange={inputhandler} /> */}
+                                        <select name="gender" id="" className="form-control" placeholder="Select Your Gender" onChange={inputhandler}>
+                                            <option value="Select">Select Your Gender</option>
+                                            <option value="Male">Male</option>
+                                            <option value="Female">Female</option>
+                                            <option value="Others">Others</option>
+                                        </select>
+                                    </div>
+                                    <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                        {/* <label htmlFor="" className="form-label">Password</label> */}
+                                        <input type="password" className="form-control" name='pass' placeholder="Password" value={data.pass} onChange={inputhandler} />
+                                    </div>
+                                    <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                        {/* <label htmlFor="" className="form-label">Confirm Password</label> */}
+                                        <input type="password" className="form-control" name='cpass' placeholder="Confirm Password" value={data.cpass} onChange={inputhandler} />
+                                    </div>
+                                    <div className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                                        <center>
+                                            <button className="btn btn-primary" onClick={readValue}>Sign Up</button> <br />
+                                             <a href="/">Login</a>
+                                        </center>
+                                    </div>
+                                </div>                            </div>
                         </div>
+
+
                     </div>
                 </div>
             </div>
