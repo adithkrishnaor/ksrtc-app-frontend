@@ -5,7 +5,7 @@ import Navbar from './Navbar'
 
 const Login = () => {
 
-    const navigate=useNavigate()
+    const navigate = useNavigate()
     const [data, setdata] = useState({
         "email": "",
         "pass": ""
@@ -38,22 +38,32 @@ const Login = () => {
             <div className="container">
                 <div className="row">
                     <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                        <div className="row g-3">
-                            <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                                <label htmlFor="" className="form-label"><b>Email ID</b></label>
-                                <input type="text" className="form-control" name='email' value={data.email} onChange={inputhandler} />
-                            </div>
-                            <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                                <label htmlFor="" className="form-label"><b>Password</b></label>
-                                <input type="password" name="pass" value={data.pass} onChange={inputhandler} id="" className="form-control" />
-                            </div>
-                            <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                        <br /><br />
+                        <div class="card border-rounded text-bg-light border-primary">
+                            <div class="card-body">
                                 <center>
-                                <button className="btn btn-success" onClick={readValue}>Login</button><br /> <br />
-                                <a href="/signup">Signup</a>
+                                    <h3 class="card-title">Signup Here...</h3> <hr />
                                 </center>
+
+                                <div className="row g-3">
+                                    <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                                        {/* <label htmlFor="" className="form-label"><b>Email ID</b></label> */}
+                                        <input type="text" className="form-control" placeholder='Email' name='email' value={data.email} onChange={inputhandler} />
+                                    </div>
+                                    <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                                        {/* <label htmlFor="" className="form-label"><b>Password</b></label> */}
+                                        <input type="password" name="pass" placeholder='Password' value={data.pass} onChange={inputhandler} id="" className="form-control" />
+                                    </div>
+                                    <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                                        <center>
+                                            <button className="btn btn-success" onClick={readValue}>Login</button><br /> <br />
+                                            <Link to="/signup">Signup</Link>
+                                        </center>
+                                    </div>
+
+                                </div>
                             </div>
-                            
                         </div>
                     </div>
                 </div>
