@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React, { useState } from 'react'
-import Navbar from './Navbar'
+import { Link } from 'react-router-dom'
 
 const Signup = () => {
 
@@ -77,8 +77,8 @@ const Signup = () => {
                                     </div>
                                     <div className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                                         <center>
-                                            <button className="btn btn-primary" onClick={readValue}>Sign Up</button> <br />
-                                             <a href="/">Login</a>
+                                            <button className="btn btn-primary" onClick={readValue}>Sign Up</button> <br /><br />
+                                            <Link to="/"></Link> <br />
                                         </center>
                                     </div>
                                 </div>                            </div>
