@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useState } from 'react'
+import Navbar from './Navbar'
 
 const Signup = () => {
 
@@ -17,7 +18,7 @@ const Signup = () => {
     const readValue = () => {
         axios.post("http://localhost:8080/signup", data).then(
             (response) => {
-                if (response.data.status == "Signup") {
+                if (response.data.status == "success") {
                     alert("Success")
                 }
                 else {
@@ -76,7 +77,8 @@ const Signup = () => {
                                     </div>
                                     <div className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                                         <center>
-                                            <button className="btn btn-primary" onClick={readValue}>Sign Up</button>
+                                            <button className="btn btn-primary" onClick={readValue}>Sign Up</button> <br />
+                                             <a href="/">Login</a>
                                         </center>
                                     </div>
                                 </div>                            </div>
