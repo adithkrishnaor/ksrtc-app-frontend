@@ -40,7 +40,7 @@ const Login = () => {
                     <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
                         <br /><br />
-                        <div class="card border-rounded text-bg-light border-primary">
+                        <div class="card w-75 mx-auto border-rounded text-bg-light border-primary">
                             <div class="card-body">
                                 <center>
                                     <h3 class="card-title">Signup Here...</h3> <hr />
