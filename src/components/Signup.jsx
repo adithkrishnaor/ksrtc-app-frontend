@@ -7,8 +7,8 @@ const Signup = () => {
     const [data, setdata] = useState({
         "name": "",
         "email": "",
-        "num": "",
-        "gender": "",
+        "num":"",
+        "gender":"",
         "pass": "",
         "cpass": ""
     })
@@ -35,15 +35,11 @@ const Signup = () => {
 
     return (
         <div>
+{/*             <Navbar/> */}
             <div className="container">
                 <div className="row">
                     <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                        <br /><br />
-                        <div class="card border-rounded text-bg-light border-primary">
-                            <div class="card-body">
-                                <center>
-                                    <h3 class="card-title">Signup Here...</h3> <hr />
-                                </center>
+               
                                 <div className="row g-3">
                                     <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                                         {/* <label htmlFor="" className="form-label">Name</label> */}
@@ -83,8 +79,6 @@ const Signup = () => {
                                     </div>
                                 </div>                            </div>
                         </div>
-
-
                     </div>
                 </div>
             </div>
